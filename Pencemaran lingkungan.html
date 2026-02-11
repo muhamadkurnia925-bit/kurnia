@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Artikel Pencemaran Lingkungan: Tanah, Air, Udara</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f9f7;
+            color: #2d3436;
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #2ecc71, #27ae60);
+            color:yellow;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: #218c54;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2ecc71;
+        }
+
+        /* Konten Utama */
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            gap: 2rem;
+        }
+
+        /* Kartu Artikel */
+        .article-card {
+            background-color: pink;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 1.5rem;
+        }
+
+        .article-content h2 {
+            color: #27ae60;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-left: 4px solid #2ecc71;
+            padding-left: 0.8rem;
+        }
+
+        .article-content h3 {
+            color: #218c54;
+            margin: 1rem 0 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .article-content ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.8rem;
+            }
+
+            .article-img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>PENCEMARAN LINGKUNGAN</h1>
+        <p>Tiga Tantangan Utama: Tanah, Air, dan Udara | cicurugCidahu,jawa Barat - 11 Februari 2026</p>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="#tanah">Pencemaran Tanah</a></li>
+            <li><a href="#air">Pencemaran Air</a></li>
+            <li><a href="#udara">Pencemaran Udara</a></li>
+        </ul>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main>
+        <!-- Artikel 1: Pencemaran Tanah -->
+        <article class="article-card" id="tanah">
+            <img src="Tanah.jpg" 
+                 alt="Pencemaran tanah akibat limbah dan bahan kimia" class="article-img">
+            <div class="article-content">
+                <h2>Pencemaran Tanah</h2>
+                <p>Pencemaran tanah adalah kondisi di mana kualitas tanah menurun akibat masuknya zat atau bahan asing yang merusak kesuburan, struktur, dan fungsi tanah sebagai media tumbuhnya tanaman serta tempat tinggal bagi organisme tanah.</p>
+                
+                <h3>Penyebab Utama</h3>
+                <ul>
+                    <li>Limbah padat rumah tangga dan industri yang tidak dikelola dengan baik</li>
+                    <li>Penggunaan pupuk kimia dan pestisida berlebih dalam pertanian</li>
+                    <li>Tumpahan minyak dan bahan kimia beracun dari aktivitas industri</li>
+                    <li>Pembuangan limbah elektronik (e-waste) yang mengandung logam berat</li>
+                </ul>
+
+                <h3>Dampak dan Solusi</h3>
+                <p>Dampaknya antara lain penurunan hasil panen, keracunan makanan, dan kerusakan ekosistem tanah. Solusinya meliputi penggunaan pupuk organik, pengelolaan limbah yang benar, serta program reklamasi tanah tercemar.</p>
+            </div>
+        </article>
+
+        <!-- Artikel 2: Pencemaran Air -->
+        <article class="article-card" id="air">
+            <img src="air.jpg" 
+                 alt="Pencemaran air di sungai dan danau" class="article-img">
+            <div class="article-content">
+                <h2>Pencemaran Air</h2>
+                <p>Pencemaran air terjadi ketika zat pencemar masuk ke dalam badan air (sungai, danau, laut, atau air tanah) sehingga mengubah komposisi alaminya dan membuatnya tidak layak digunakan untuk konsumsi, pertanian, atau kehidupan makhluk air.</p>
+                
+                <h3>Penyebab Utama</h3>
+                <ul>
+                    <li>Limbah cair rumah tangga dan industri yang dibuang langsung ke badan air</li>
+                    <li>Aliran limpasan permukaan yang membawa pupuk dan pestisida dari lahan pertanian</li>
+                    <li>Tumpahan minyak dan bahan bakar dari kapal atau aktivitas pengeboran</li>
+                    <li>Pembuangan limbah padat ke sungai atau laut</li>
+                </ul>
+
+                <h3>Dampak dan Solusi</h3>
+                <p>Dampaknya meliputi kematian ikan dan makhluk air, keracunan air minum, serta kerusakan terumbu karang. Solusinya antara lain pembangunan instalasi pengolahan limbah, pengendalian penggunaan bahan kimia, dan penghijauan daerah aliran sungai.</p>
+            </div>
+        </article>
+
+        <!-- Artikel 3: Pencemaran Udara -->
+        <article class="article-card" id="udara">
+            <img src="udara.jpg" 
+                 alt="Pencemaran udara akibat asap dan polusi industri" class="article-img">
+            <div class="article-content">
+                <h2>Pencemaran Udara</h2>
+                <p>Pencemaran udara adalah peningkatan konsentrasi zat pencemar di udara hingga tingkat yang dapat membahayakan kesehatan manusia, tumbuhan, hewan, serta menyebabkan kerusakan pada bangunan dan struktur alamiah.</p>
+                
+                <h3>Penyebab Utama</h3>
+                <ul>
+                    <li>Emisi gas buang dari kendaraan bermotor dan industri</li>
+                    <li>Pembakaran bahan bakar fosil untuk pembangkit listrik</li>
+                    <li>Pembakaran hutan dan lahan yang menghasilkan asap tebal</li>
+                    <li>Debu dari aktivitas konstruksi dan pertambangan</li>
+                </ul>
+
+                <h3>Dampak dan Solusi</h3>
+                <p>Dampaknya antara lain penyakit pernapasan, gangguan kardiovaskular, dan perubahan iklim. Solusinya meliputi penggunaan energi terbarukan, transportasi umum yang efisien, serta pengendalian emisi industri dengan teknologi ramah lingkungan.</p>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 | Semua artikel dibuat untuk menyadarkan masyarakat akan kepentingan lingkungan dan bahayanya sampah tanah air dan polusi</p>
+        <p>Sumber gambar: Unsplash (lisensi bebas hak cipta)</p>
+    </footer>
+</body>
+</html>
